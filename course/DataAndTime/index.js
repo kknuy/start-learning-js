@@ -26,4 +26,15 @@ newDate.setMonth(6);
 newDate.setDate(2023);
 
 const difference = (date.getTime() - newDate.getTime());
-console.log("difference",difference);
+console.log("difference",difference / 1000 / 60);
+
+const  startTime = Date.now();
+
+for (let i = 0; i < 1000000; i++) {
+    console.log("Do something")
+    
+}
+
+const endtTime = Date.now();
+
+console.log("difference",startTime - endtTime);
